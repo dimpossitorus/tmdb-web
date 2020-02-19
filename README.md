@@ -13,4 +13,16 @@ Clone the repository and run this command inside your terminal
 
 `npm run dev`
 
+If you want to have production build: 
+
+`npm run build`
+
+`npm run start` or  `pm2 start npm -- start` if you use PM2
+
 Then open `localhost:3000`
+
+## How to Run Test
+
+Run this command inside your terminal
+
+`npm run test`
