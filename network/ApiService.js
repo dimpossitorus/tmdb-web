@@ -29,7 +29,6 @@ export async function getDiscoverMovies(page, sort_by, releaseAfter, releaseBefo
     }
   )
     .then(response => {
-      console.log(response.request)
       let movies = response.data
       movies.results.map(movie => {
         let genres = []
@@ -65,7 +64,6 @@ export async function getMovieDetail(movieId) {
   await getCategories()
   return await NetworkConnection.get(`movie/${movieId}`)
     .then(response => {
-      console.log(response.request)
       let movie = response.data
       return Promise.resolve(movie)
     })

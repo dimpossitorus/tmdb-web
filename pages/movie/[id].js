@@ -128,7 +128,7 @@ const Movie = ({movie}) => (
 )
 
 Movie.getInitialProps = async ({query}) => {
-  let movieId = query.movieId
+  let movieId = query.id
   const movie = await getMovieDetail(movieId)
   return {movie: movie}
 }
