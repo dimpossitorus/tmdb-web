@@ -69,6 +69,8 @@ const Movie = ({movie}) => (
             </SegmentGroup>
           </Responsive>
         </Grid.Column>
+        
+        <Divider horizontal/>
 
         <GridColumn width={12}>
           <Header as={'h1'}>{movie.original_title}</Header>

@@ -9,7 +9,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
     "axios": "^0.18.1",
     "next": "9.2.1",
     "react": "16.12.0",
