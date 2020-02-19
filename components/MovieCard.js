@@ -18,8 +18,8 @@ const MovieCard = (props) => (
       </Card.Content>
       <Card.Content extra textAlign='center'>
         <List horizontal>
-          {props.movie.genres.map(genre => (
-            <List.Item>{genre}</List.Item>
+          {props.movie.genres.map((genre, idx) => (
+            <List.Item key={idx}>{genre}</List.Item>
           ))
           }
         </List>
