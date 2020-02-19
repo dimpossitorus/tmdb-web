@@ -10,7 +10,7 @@ const MovieCard = (props) => (
       <Card.Content>
         <Card.Header>{props.movie.title}</Card.Header>
         <Card.Meta>
-          <span className='date'>Popularity: {props.movie.popularity}</span>
+          <span>Popularity: {props.movie.popularity}</span>
         </Card.Meta>
         <Card.Description>
           {props.movie.overview}
