@@ -219,12 +219,7 @@ export default class Home extends React.Component {
             </GridRow>
           </Grid>
         </Container>
-        <CardGroup centered className="padded">
-          <style jsx>{`
-          .padded {
-            padding-bottom: '5em';
-          }
-        `}</style>
+        <CardGroup centered>
           {movies.results.map((movie, idx) => (
             <MovieCard key={idx} movie={movie}/>
           ))

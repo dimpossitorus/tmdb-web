@@ -4,7 +4,7 @@ import {Constant} from "../util/Constant";
 import Link from "next/link";
 
 const MovieCard = (props) => (
-  <Link href='movie/[movieId]' as={`/movie/${props.movie.id}`}>
+  <Link href='/movie/[movieId]' as={`/movie/${props.movie.id}`}>
     <Card>
       <Image src={`${Constant.BACKDROP_BASE_URL}${props.movie.poster_path}`} wrapped ui={false}/>
       <Card.Content>
